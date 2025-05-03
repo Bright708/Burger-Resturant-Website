@@ -1,107 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-width: 375px;
-    min-height: 100vh;
-    font-family:"Poppins",sans-serif ;
-    color: white;
+body {
+    scroll-behavior: smooth;
+  min-width: 375px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: rgb(30, 59, 30);
 }
-.card{
-width: 100%;
-height: 100vh;
-background-color: rgb(30, 59, 30);
-}
-
-.card #menu button{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    float: right;
-    margin: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-}
-.card #menu button i{
-   font-size: 1.4rem;
-   color: white;
-}
-.card #inside-menu{
-    padding: 2px;
-    height: 100vh;
-    width: 70%;
-    position: fixed;
-    right:-120%;
-    z-index: 1;
-    color: black;
-    background-color: white;
-    font-family:"Tagesschrift",sans-serif ;
-}
-.card #inside-menu button{
-    position: relative;
-    float: right;
-    top: -2rem;
-    height: 2rem;
-    width: 2rem;
-    border: none;
-    background: none;
+.card {
+  width: 100%;
+  height: 100vh;
 }
 
-.card #inside-menu button i{
-    font-size: 1.4rem;
+.card #menu_button button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  float: right;
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+.card #menu_button button i {
+  font-size: 1.4rem;
+  color: white;
+}
+.card #inside-menu {
+  padding: 2px;
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  right: -120%;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  font-family: "Tagesschrift", sans-serif;
+}
+.card #inside-menu button {
+  position: relative;
+  float: right;
+  top: -2rem;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background: none;
+}
 
+.card #inside-menu button i {
+  font-size: 1.4rem;
 }
-.card #inside-menu ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin:2rem 0 ;
-    row-gap: 6rem;
-    flex-flow: column nowrap;
+.card #inside-menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  row-gap: 6rem;
+  flex-flow: column nowrap;
 }
-.card #inside-menu ul li{
-    font-weight: bold;
-    font-family:"Tagesschrift" ;
+.card #inside-menu ul li {
+  font-weight: bold;
+  font-family: "Tagesschrift";
 }
 .card .landing {
-    display: flex;
-    padding-left: 2rem;
-    padding-top: 5rem;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+  display: flex;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
-.card .landing .header h2{
-    font-family: "BioRhyme";
+.card .landing .header h2 {
+  font-family: "BioRhyme";
 }
-.card .landing .footer h2{
-    
-    font-family: "BioRhyme";
-    font-size: 1rem;
+.card .landing .footer h2 {
+  font-family: "BioRhyme";
+  font-size: 1rem;
 }
 .card .landing .footer {
-   text-align: left;
+  text-align: left;
 }
-.card .landing .footer p{
-    font-family: "Playwrite România";
-    font-size: 2rem;
+.card .landing .footer p {
+  font-family: "Playwrite România";
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 900;
+}
+.card .landing .header h1 {
+  font-family: "Playwrite România ";
+  font-weight: bolder;
+  font-style: italic;
+}
+.card .landing img {
+  width: 300px;
+  background: transparent;
+}
+.card2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  font-family: "BioRhyme";
+  margin-top: 9rem;
+  height: 70vh;
+  padding: 10px;
+}
+.card2 .menuitem {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+.card2 .menuitem .item h2 {
+  font-size: 1rem;
+}
+.card2 .menuitem .item div {
+box-shadow: 0.2px 0.6px 12px rgb(111, 177, 111);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.329);
+  height: 12rem;
+  width: 10rem;
+  border-radius: 10px;
+}
+.card2 .menuitem .item a {
+  text-decoration: none;
+  color: white;
+}
+.card2 .menuitem .item {
+  column-gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.card2 .menuitem img {
+  overflow: scroll;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+.card2 .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.card3{
+    text-align: center;
+    height:60vh;
+}
+.card3 .header{
+    font-family:'Playwrite România' ;
     font-style: italic;
-    font-weight: 900;
 }
-.card .landing .header h1{
-    font-family: "Playwrite România ";
-    font-weight: bolder;
-    font-style: italic;
+.card3 .aboutbtn{
+    margin-top: 2rem;
 }
-.card .landing img{
-    width: 300px;
-    background: transparent;
-    
-    
+.card3 button{
+background-color: rgb(79, 143, 79);
+color: white;
+height: 3rem;
+width: 10rem;
+border: none;
+font-size: 1.3rem;
+border-radius: 5px;
 }
+.card3 button:hover{
+    box-shadow: 0.2px 0.6px 12px rgb(111, 177, 111);
+
+}
+
+.card4 .header{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+
