@@ -13,6 +13,7 @@ body {
   background-color: rgb(30, 59, 30);
 }
 .card {
+
   width: 100%;
   height: 100vh;
 }
@@ -70,6 +71,7 @@ body {
   font-family: "Tagesschrift";
 }
 .card .landing {
+animation: leFadeInLeft 1.5s forwards;
   display: flex;
   padding-left: 2rem;
   padding-top: 5rem;
@@ -79,6 +81,7 @@ body {
 }
 .card .landing .header h2 {
   font-family: "BioRhyme";
+  animation: effect3d infinite forwards;
 }
 .card .landing .footer h2 {
   font-family: "BioRhyme";
@@ -97,6 +100,7 @@ body {
   font-family: "Playwrite România ";
   font-weight: bolder;
   font-style: italic;
+ 
 }
 .card .landing img {
   width: 300px;
@@ -177,10 +181,97 @@ border-radius: 5px;
     box-shadow: 0.2px 0.6px 12px rgb(111, 177, 111);
 
 }
+.card4{
+    height: 100vh;
+}
 
 .card4 .header{
     display: flex;
     flex-direction: column;
 align-items: center;
 }
+
+.contactdetails{
+    border-radius: 8px;
+    margin: 2rem;
+    height: 200px;
+    background-color: rgba(39, 82, 39, 0.644);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+.card4 .phone p{
+    color: white;
+    text-decoration: none;
+}
+.contactdetails div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactdetails div i{
+    font-size: 1.3rem;
+    color: rgba(187, 219, 123, 0.93);
+}
+.Client_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+.Clientinfo{
+    padding: 2rem 0;
+    background-color: rgba(38, 71, 38, 0.644);
+}
+.Client_form input{
+    font-size: 1.1rem;
+    background: transparent;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    padding-left: 1rem;
+}
+.Client_form input::placeholder{
+    color: white;
+}
+.Client_form input:hover ,input:focus{
+    outline: none;
+    color: white;
+    box-shadow: 0.2px 0.6px 12px rgb(111, 177, 111);
+}
+.Client_form textarea{
+    background: transparent;
+    font-size: 1.1rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 5px;
+    border: none;
+    padding-left: 1rem;
+}
+.Client_form textarea:hover ,textarea:focus{
+    outline: none;
+    color: white;
+    box-shadow: 0.2px 0.6px 12px rgb(111, 177, 111);
+}
+.Client_form #Submit{
+    color: white;
+}
+@keyframes effect3d {
+    to {
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
+    }
+}
+
+@keyframes leFadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to { opacity: 1 }
+}
+
 
