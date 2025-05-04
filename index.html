@@ -21,13 +21,13 @@
         <li>Home</li>
         <li>Menu</li>
         <li>About</li>
-        <li>Contact</li>
+        <li>Contact/Shop</li>
     </ul>
 </div>
 <div class="landing">
     <div class="header">
     <h2>THE ULTIMATE</h2>
-    <h1>Burger Club</h1>
+    <h1 id="landingh1">Burger Club</h1>
     </div>  
     <div><img src="./images/603c54756d83f0bbfafaffc5e128e64c.png" ></div>
     <div class="footer">
@@ -110,9 +110,34 @@
             <h1>Contact</h1>
         </div>
         <div class="contactdetails">
-            
+            <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <p>Dr. Hilla Limann Opposite the Taxi Rank</p>
+
+            </div>
+            <div class="phone">
+                <i class="ri-phone-line"></i>
+                <p>+233 20 123 4567</p>
+            </div>
         </div>
-        <div class="Clientinfo"></div>
+        <div class="Clientinfo">
+            <form class="Client_form" >
+                <label for="Name">
+                    <input type="text" id="Name" name="Name" placeholder="Enter Your Full Name" required>
+                </label>
+                <label for="Location">
+                    <input type="text" id="Location" name="Location" placeholder="Enter Your Location" required>
+                </label>
+                <label for="phonenumber">
+                    <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter Your Phone Number" required>
+                </label>
+                <label for="Order">
+                    <p>Make your Order</p>
+                    <textarea name="Order" id="myOrder" cols="30" rows="10"></textarea>
+                </label>
+                <input type="submit" value="Submit" id="Submit">
+            </form>
+        </div>
     </div>
   
 </div>
