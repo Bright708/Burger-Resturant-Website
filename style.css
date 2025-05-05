@@ -36,19 +36,39 @@ body {
 }
 .card #inside-menu {
   padding: 2px;
-  height: 100vh;
+  top: 0;
+  bottom: 0;
   width: 70%;
   position: fixed;
-  right: -120%;
-  z-index: 1;
+  right: -100%;
+  z-index: 2;
   color: black;
-  background-color: white;
+  background-color: rgba(48, 58, 41, 0.908);
   font-family: "Tagesschrift", sans-serif;
+  transition: 1s;
 }
+.card #inside-menu li{
+    color: rgb(198, 204, 189);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.card #inside-menu li:hover {
+  color: rgba(142, 160, 118, 0.888);
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+
+.card #inside-menu h1{
+    color: rgb(198, 204, 189);
+    font-size: 3rem;
+}
+
+
 .card #inside-menu button {
+color: white;
   position: relative;
   float: right;
-  top: -2rem;
+  top: -3rem;
   height: 2rem;
   width: 2rem;
   border: none;
@@ -216,7 +236,7 @@ align-items: center;
     font-size: 1.3rem;
     color: rgba(187, 219, 123, 0.93);
 }
-.Client_form{
+#Client_form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,7 +246,7 @@ align-items: center;
     padding: 2rem 0;
     background-color: rgba(38, 71, 38, 0.644);
 }
-.Client_form input{
+#Client_form input{
     font-size: 1.1rem;
     background: transparent;
     width: 20rem;
@@ -235,15 +255,15 @@ align-items: center;
     border: none;
     padding-left: 1rem;
 }
-.Client_form input::placeholder{
+#Client_form input::placeholder{
     color: white;
 }
-.Client_form input:hover ,input:focus{
+#Client_form input:hover ,input:focus{
     outline: none;
     color: white;
     box-shadow: 0.2px 0.6px 12px rgb(111, 177, 111);
 }
-.Client_form textarea{
+#Client_form textarea{
     background: transparent;
     font-size: 1.1rem;
     width: 20rem;
@@ -252,12 +272,12 @@ align-items: center;
     border: none;
     padding-left: 1rem;
 }
-.Client_form textarea:hover ,textarea:focus{
+#Client_form textarea:hover ,textarea:focus{
     outline: none;
     color: white;
     box-shadow: 0.2px 0.6px 12px rgb(111, 177, 111);
 }
-.Client_form #Submit{
+#Client_form #Submit{
     color: white;
 }
 @keyframes effect3d {
